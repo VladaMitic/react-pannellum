@@ -30,7 +30,8 @@ class ReactPannellum extends React.Component {
     style: PropTypes.shape({}),
     onPanoramaLoaded: PropTypes.func,
     onPanoramaMouseUp: PropTypes.func,
-    onPanoramaMouseDown: PropTypes.func
+    onPanoramaMouseDown: PropTypes.func,
+    onPanoramaError: PropTypes.func
   };
 
   static defaultProps = {
@@ -83,6 +84,8 @@ class ReactPannellum extends React.Component {
       myPannellum.on("mousedown", (event) => this.props.onPanoramaMouseDown(event));
     this.props.onPanoramaMouseUp &&
       myPannellum.on("mouseup", (event) => this.props.onPanoramaMouseUp(event));
+    this.props.onPanoramaError &&
+      myPannellum.on("mouseup", (event) => this.props.onPanoramaError(event));
   };
 
   initPanalleum() {
@@ -140,6 +143,8 @@ class ReactPannellum extends React.Component {
         myPannellum.off("mousedown", () => this.props.onPanoramaMouseDown);
       this.props.onPanoramaMouseUp &&
         myPannellum.off("mouseup", () => this.props.onPanoramaMouseUp);
+        this.props.onPanoramaError &&
+      myPannellum.off("mouseup", (event) => this.props.onPanoramaError);
     }
     
   }
