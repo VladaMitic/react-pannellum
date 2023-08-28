@@ -85,7 +85,7 @@ class ReactPannellum extends React.Component {
     this.props.onPanoramaMouseUp &&
       myPannellum.on("mouseup", (event) => this.props.onPanoramaMouseUp(event));
     this.props.onPanoramaError &&
-      myPannellum.on("mouseup", (event) => this.props.onPanoramaError(event));
+      myPannellum.on("error", (event) => this.props.onPanoramaError(event));
   };
 
   initPanalleum() {
@@ -144,7 +144,7 @@ class ReactPannellum extends React.Component {
       this.props.onPanoramaMouseUp &&
         myPannellum.off("mouseup", () => this.props.onPanoramaMouseUp);
         this.props.onPanoramaError &&
-      myPannellum.off("mouseup", (event) => this.props.onPanoramaError);
+      myPannellum.off("error", (event) => this.props.onPanoramaError);
     }
     
   }

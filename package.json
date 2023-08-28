@@ -1,10 +1,13 @@
 {
-  "name": "react-pannellum",
+  "name": "@devmiticvlada/react-pannellum-error",
   "version": "0.2.14",
   "description": "A library show panorama image for react",
-  "author": "hoaiduyit",
+  "author": "miticvlada",
   "license": "MIT",
-  "repository": "hoaiduyit/react-pannellum",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmiticvlada/react-pannellum.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "engines": {
@@ -54,5 +57,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/devmiticvlada/react-pannellum/issues"
+  },
+  "homepage": "https://github.com/devmiticvlada/react-pannellum#readme"
 }
