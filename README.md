@@ -4,7 +4,7 @@
 
 > This library use source from [https://pannellum.org/](https://pannellum.org/)
 
-> This library based on [https://www.npmjs.com/package/react-pannellum] (https://www.npmjs.com/package/react-pannellum)
+> This library based on https://www.npmjs.com/package/react-pannellum
 
 [![NPM](https://img.shields.io/npm/v/react-pannellum.svg)](https://www.npmjs.com/package/react-pannellum) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,7 +15,7 @@ npm i @devmiticvlada/react-pannellum-error
 ```
 
 ## Usage
-see documentation for source library [https://www.npmjs.com/package/react-pannellum] (https://www.npmjs.com/package/react-pannellum)
+see documentation for source library https://www.npmjs.com/package/react-pannellum
 
 
 ## Additional props
